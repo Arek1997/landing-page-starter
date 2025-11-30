@@ -1,0 +1,17 @@
+---
+import '@/styles/global.css';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="pl" class="scroll-smooth bg-white">
+  <head>
+    <slot name="head" />
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
+</html>
